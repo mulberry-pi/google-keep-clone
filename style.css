@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* hover effects */
+.material-symbols-outlined {
+    padding: 10px;
+}
+
+.hover:hover {
+    background: #f1f3f4;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip-text {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 0.7rem;
+    background-color: #323232;
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+    white-space: nowrap;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: 1px solid #dadce0;
+    padding: 8px;
+    color: #5f6368;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+}
+
+.search-area {
+    background: #f1f3f4;
+    width: 692px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.search-area input {
+    background: #f1f3f4;
+    border: none;
+    height: 100%;
+    width: 95%;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-area span {
+    margin-left: 10px;
+}
+.settings-area, .profile-actions-area {
+    display: flex;
+}
+
+/* main section */
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* arranges flex items in vertical column */
+    margin-left: 18px;
+    margin-top: 5px;
+    color: #5f6368;
+    width: 60px;
+    overflow-x: hidden; /*hides the horizontal scrollbar of the sidebar*/
+}
+
+.active {
+    background-color: #fef0c3;
+    border-radius: 50%;
+    color: black;
+}
+
+.active:hover {
+    background-color: #fef0c3;
+}
+
+.sidebar .sidebar-item {
+    margin-left: 18px;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item .sidebar-text {
+    color: black;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    width: 250px;
+}
+
+.sidebar-item:nth-child(1) { /* nth-child: selects specific child elements based on their position in the parent */
+    margin-top: 5px;            /* e.g nth-child(odd) selects every odd-numbered child element */
+}
+
+/* form */
+.form-container {
+    margin: 40px
+}
