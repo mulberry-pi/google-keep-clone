@@ -217,26 +217,35 @@ input:focus {
 .note {
     background: white;
     width: 240px;
-    height: 104px;
+    margin: 10px;
     border: 1px solid #e0e1e0;
     border-radius: 8px;
-    padding: 15px;
+    position: relative;
 }
 
 .note .note-title {
     width: 100%;
+    margin: 15px 0 0 15px;
 }
 
 .note .note-text {
     width: 100%;
-    margin-top: 10px;
+    margin: 10px 0 0 15px;
 }
 
 .note .note-footer  {
     display: flex;
-    margin-top: 5px;
+    margin-top: 15px;
+    padding: 0;
+    justify-content: center;
 }
 
 .note-footer .material-symbols-outlined {
     color: #5f6368;
+}
+
+.note .check-circle {
+    position: absolute;
+    left: -20px;
+    top: -20px;
 }
