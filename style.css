@@ -249,3 +249,25 @@ input:focus {
     left: -20px;
     top: -20px;
 }
+
+/* modal pop-up */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    width: 589px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* allows you to mess around w/components */
+}
+
+.open-modal {
+    visibility: visible;
+}
